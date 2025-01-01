@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\",
+  "WorkspaceRootPath": "C:\\Users\\teagu\\source\\repos\\TeagueGillard\\TG-U1-Firmware\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{901A7731-7EA9-41C0-816B-BA65F855DD8B}|TG-U1 Firmware.vcxproj|C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\TG-U1-Firmware.ino||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{901A7731-7EA9-41C0-816B-BA65F855DD8B}|TG-U1 Firmware.vcxproj|C:\\Users\\teagu\\source\\repos\\TeagueGillard\\TG-U1-Firmware\\TG-U1-Firmware.ino||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{901A7731-7EA9-41C0-816B-BA65F855DD8B}|TG-U1 Firmware.vcxproj|solutionrelative:TG-U1-Firmware.ino||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{901A7731-7EA9-41C0-816B-BA65F855DD8B}|TG-U1 Firmware.vcxproj|C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\LED-Common.ino||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{901A7731-7EA9-41C0-816B-BA65F855DD8B}|TG-U1 Firmware.vcxproj|solutionrelative:LED-Common.ino||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{901A7731-7EA9-41C0-816B-BA65F855DD8B}|TG-U1 Firmware.vcxproj|C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\Startup.ino||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{901A7731-7EA9-41C0-816B-BA65F855DD8B}|TG-U1 Firmware.vcxproj|solutionrelative:Startup.ino||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TG-U1-Firmware.ino",
-              "DocumentMoniker": "C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\TG-U1-Firmware.ino",
-              "RelativeDocumentMoniker": "TG-U1-Firmware.ino",
-              "ToolTip": "C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\TG-U1-Firmware.ino",
-              "RelativeToolTip": "TG-U1-Firmware.ino",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGgAAABcAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKbSURBVDhPlVM9aFNRGD33vtf0pSZNYxpDKSQtsdoo1MFCEVTERRCsFAcLonZxVVxEJ8GtHZwLDg6Kq4KDk\u002BAgSNPW2kCxXVS00J/0NbF5TfJ\u002Br\u002Be1dauiF07uzXe/8/Gd870rvCDA49IC8u3xxHqjccJVQQp/WbqQlU7DKM2UNzYnhgaVePChiHTUKKw1GuN1zz\u002BjoIy93H2XAOyopk8dihr3v1vWnJgsLbTPm\u002BazquMMB0rtpf19CSGQiETeFjo6RsXtd\u002B/PfrVqr5q\u002BnxRh/X9aChGpWblYbFSWG42U2bSj7ACbto2NZnMXdhMVx95BeP4dD3MqzDVtu5XcTlllYMv1UHU86JqGi7ksxvqP4GQ6DXoCixhIpXCTsUs9ORi6vpO75bqo2g6kxUPd99CqSdwpHMVhoVBeXcHlTBpjfXlcy/fialcG1bVVZBHg7rF\u002BxHRttzi50vZ9uBzlQLIDfn0bk4tLmLa2Mf7xE44faMOp9hgmpmfwU2p4/uUbqtsWBpMJcnw45EqbZBW673mwGBCaDoMaXTpd415jm06kFTq9AO8tyg0oO\u002BSEXOmGJP4pmSYUCRe6u5CIx3GjN4el5WXMEtd7sqgw7zSltLHQ7HoZkrMIu9CSwyMFXwVXGp6vfzY3cJB\u002BZHg5t7KCN2UT81YdzVoN2RYdW9xf/lhGWUhIIQKp1GuRf/J0xFXqBTlG2FbAAsKnLE5E0qzw2wvCLhlXPAsWkiwQNtAixC2pXLciXLcJOirog0Y7pJTcmU69vIMWaiVJoy\u002BS7u/kuq4TkBsWmIfjTIHG/CfmWKioxc\u002BdbyIIFpTn9REZQhA\u002BEewDRdicRpFjuOc7zqLofviIb1Tn563SFDnEQyf1/elV8bGITf4WIeQqfA\u002B/AN6Qto\u002BLDNA3AAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-12-24T17:53:10.167Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -47,28 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LED-Common.ino",
-              "DocumentMoniker": "C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\LED-Common.ino",
-              "RelativeDocumentMoniker": "LED-Common.ino",
-              "ToolTip": "C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\LED-Common.ino",
-              "RelativeToolTip": "LED-Common.ino",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TG-U1-Firmware.ino",
+              "DocumentMoniker": "C:\\Users\\teagu\\source\\repos\\TeagueGillard\\TG-U1-Firmware\\TG-U1-Firmware.ino",
+              "RelativeDocumentMoniker": "TG-U1-Firmware.ino",
+              "ToolTip": "C:\\Users\\teagu\\source\\repos\\TeagueGillard\\TG-U1-Firmware\\TG-U1-Firmware.ino*",
+              "RelativeToolTip": "TG-U1-Firmware.ino*",
+              "ViewState": "AgIAAFMAAAAAAAAAAADwv5AAAABWAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKbSURBVDhPlVM9aFNRGD33vtf0pSZNYxpDKSQtsdoo1MFCEVTERRCsFAcLonZxVVxEJ8GtHZwLDg6Kq4KDk\u002BAgSNPW2kCxXVS00J/0NbF5TfJ\u002Br\u002Be1dauiF07uzXe/8/Gd870rvCDA49IC8u3xxHqjccJVQQp/WbqQlU7DKM2UNzYnhgaVePChiHTUKKw1GuN1zz\u002BjoIy93H2XAOyopk8dihr3v1vWnJgsLbTPm\u002BazquMMB0rtpf19CSGQiETeFjo6RsXtd\u002B/PfrVqr5q\u002BnxRh/X9aChGpWblYbFSWG42U2bSj7ACbto2NZnMXdhMVx95BeP4dD3MqzDVtu5XcTlllYMv1UHU86JqGi7ksxvqP4GQ6DXoCixhIpXCTsUs9ORi6vpO75bqo2g6kxUPd99CqSdwpHMVhoVBeXcHlTBpjfXlcy/fialcG1bVVZBHg7rF\u002BxHRttzi50vZ9uBzlQLIDfn0bk4tLmLa2Mf7xE44faMOp9hgmpmfwU2p4/uUbqtsWBpMJcnw45EqbZBW673mwGBCaDoMaXTpd415jm06kFTq9AO8tyg0oO\u002BSEXOmGJP4pmSYUCRe6u5CIx3GjN4el5WXMEtd7sqgw7zSltLHQ7HoZkrMIu9CSwyMFXwVXGp6vfzY3cJB\u002BZHg5t7KCN2UT81YdzVoN2RYdW9xf/lhGWUhIIQKp1GuRf/J0xFXqBTlG2FbAAsKnLE5E0qzw2wvCLhlXPAsWkiwQNtAixC2pXLciXLcJOirog0Y7pJTcmU69vIMWaiVJoy\u002BS7u/kuq4TkBsWmIfjTIHG/CfmWKioxc\u002BdbyIIFpTn9REZQhA\u002BEewDRdicRpFjuOc7zqLofviIb1Tn563SFDnEQyf1/elV8bGITf4WIeQqfA\u002B/AN6Qto\u002BLDNA3AAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-12-24T22:29:34.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Startup.ino",
-              "DocumentMoniker": "C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\Startup.ino",
-              "RelativeDocumentMoniker": "Startup.ino",
-              "ToolTip": "C:\\Users\\teagu\\source\\repos\\TG-U1 Firmware\\Startup.ino",
-              "RelativeToolTip": "Startup.ino",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKbSURBVDhPlVM9aFNRGD33vtf0pSZNYxpDKSQtsdoo1MFCEVTERRCsFAcLonZxVVxEJ8GtHZwLDg6Kq4KDk\u002BAgSNPW2kCxXVS00J/0NbF5TfJ\u002Br\u002Be1dauiF07uzXe/8/Gd870rvCDA49IC8u3xxHqjccJVQQp/WbqQlU7DKM2UNzYnhgaVePChiHTUKKw1GuN1zz\u002BjoIy93H2XAOyopk8dihr3v1vWnJgsLbTPm\u002BazquMMB0rtpf19CSGQiETeFjo6RsXtd\u002B/PfrVqr5q\u002BnxRh/X9aChGpWblYbFSWG42U2bSj7ACbto2NZnMXdhMVx95BeP4dD3MqzDVtu5XcTlllYMv1UHU86JqGi7ksxvqP4GQ6DXoCixhIpXCTsUs9ORi6vpO75bqo2g6kxUPd99CqSdwpHMVhoVBeXcHlTBpjfXlcy/fialcG1bVVZBHg7rF\u002BxHRttzi50vZ9uBzlQLIDfn0bk4tLmLa2Mf7xE44faMOp9hgmpmfwU2p4/uUbqtsWBpMJcnw45EqbZBW673mwGBCaDoMaXTpd415jm06kFTq9AO8tyg0oO\u002BSEXOmGJP4pmSYUCRe6u5CIx3GjN4el5WXMEtd7sqgw7zSltLHQ7HoZkrMIu9CSwyMFXwVXGp6vfzY3cJB\u002BZHg5t7KCN2UT81YdzVoN2RYdW9xf/lhGWUhIIQKp1GuRf/J0xFXqBTlG2FbAAsKnLE5E0qzw2wvCLhlXPAsWkiwQNtAixC2pXLciXLcJOirog0Y7pJTcmU69vIMWaiVJoy\u002BS7u/kuq4TkBsWmIfjTIHG/CfmWKioxc\u002BdbyIIFpTn9REZQhA\u002BEewDRdicRpFjuOc7zqLofviIb1Tn563SFDnEQyf1/elV8bGITf4WIeQqfA\u002B/AN6Qto\u002BLDNA3AAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-12-24T22:29:52.999Z",
+              "WhenOpened": "2024-12-24T17:53:10.167Z",
               "EditorCaption": ""
             }
           ]

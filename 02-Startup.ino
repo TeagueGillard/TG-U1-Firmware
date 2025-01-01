@@ -38,9 +38,7 @@ void setup1() {
 
 // Setup for core 2
 void setup() {
-    delay(500);
 #include <Adafruit_NeoPixel.h>
-
     if (LED1_Enabled == 1 || LED2_Enabled == 1 || LED3_Enabled == 1 || LED4_Enabled == 1)     // Checks if LEDS are enabled
     {
         LEDSetup();                                                                             // Runs the LED Setup
@@ -88,9 +86,11 @@ void loop() {
     if (!SIMHUB) {
         if (Serial.available()) {
             String inputLEDString = Serial.readStringUntil('\n');
+
             if (inputLEDString.startsWith("SIMHUB")) {
                 SIMHUB = true;
             }
+
             int ledstrip = inputLEDString.substring(inputLEDString.indexOf("led:") + 5, inputLEDString.indexOf(",")).toInt();
             String inputString = inputLEDString.substring(inputLEDString.indexOf(",") + 2, inputLEDString.indexOf("ee"));
 
@@ -113,9 +113,9 @@ void loop() {
                     isRainbow4 = false;
                     break;
                 }
-                int red = inputString.substring(inputString.indexOf("red:") + 5, inputString.indexOf(",")).toInt();
-                int green = inputString.substring(inputString.indexOf("green:") + 7, inputString.lastIndexOf(",")).toInt();
-                int blue = inputString.substring(inputString.indexOf("blue:") + 6).toInt();
+                int red = inputLEDString.substring(inputLEDString.indexOf("red:") + 5, inputLEDString.indexOf(",", inputLEDString.indexOf("red:"))).toInt();
+                int green = inputLEDString.substring(inputLEDString.indexOf("green:") + 7, inputLEDString.indexOf(",", inputLEDString.indexOf("green:"))).toInt();
+                int blue = inputLEDString.substring(inputLEDString.indexOf("blue:") + 6, inputLEDString.indexOf(",", inputLEDString.indexOf("blue:"))).toInt();
                 setStaticColor(ledstrip, red, green, blue);
             }
 
@@ -123,41 +123,38 @@ void loop() {
                 switch (ledstrip) {
                 case 1:
                     isRainbow1 = true;
-                    rainbowWave(1);
+                    rainbowWave1();
                     break;
 
                 case 2:
                     isRainbow2 = true;
-                    rainbowWave(2);
+                    rainbowWave2();
                     break;
 
                 case 3:
                     isRainbow3 = true;
-                    rainbowWave(3);
+                    rainbowWave3();
                     break;
 
                 case 4:
                     isRainbow4 = true;
-                    rainbowWave(4);
+                    rainbowWave4();
                     break;
                 }
-                rainbowWave(ledstrip);
-
-
             }
         }
 
         if (isRainbow1) {
-            rainbowWave(1);
+            rainbowWave1();
         }
         if (isRainbow2) {
-            rainbowWave(2);
+            rainbowWave2();
         }
         if (isRainbow3) {
-            rainbowWave(3);
+            rainbowWave3();
         }
         if (isRainbow4) {
-            rainbowWave(4);
+            rainbowWave4();
         }
     }
 }

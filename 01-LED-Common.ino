@@ -24,28 +24,6 @@ void LEDSetup()
 	LED3.begin();
 	LED4.begin();
 
-	// Sets all LEDs to Red 
-	for (int i = 0; i < LED1_Num; i++) {
-		LED1.setPixelColor(i, 255, 0, 0);
-	}
-	LED1.show();
-	for (int i = 0; i < LED2_Num; i++) {
-		LED2.setPixelColor(i, 255, 0, 0);
-	}
-	LED2.show();
-	for (int i = 0; i < LED3_Num; i++) {
-		LED3.setPixelColor(i, 255, 0, 0);
-	}
-	LED3.show();
-	for (int i = 0; i < LED4_Num; i++) {
-		LED4.setPixelColor(i, 255, 0, 0);
-	}
-	LED4.show();
-
-
-	delay(1000);
-
-
 	// Sets all LEDs to Black(Off) 
 	for (int i = 0; i < LED1_Num; i++) {
 		LED1.setPixelColor(i, 0, 0, 0);
@@ -67,9 +45,7 @@ void LEDSetup()
 	}
 	LED4.show();
 
-
-	delay(1000);
-
+	delay(10);
 
 	// Sets first LED to Red - Not Connected
 	LED1.setPixelColor(1, 255, 0, 0);
@@ -92,7 +68,7 @@ void setStaticColor(int ledstrip, int red, int green, int blue) {
 	case 1:
 		// Set color for LED strip 1
 		for (int i = 0; i < LED1_Num; i++) {
-			LED1.setPixelColor(i, red, green, blue);
+			LED1.setPixelColor(i, LED1.Color(red, green, blue));
 		}
 		LED1.show();
 		break;
@@ -100,7 +76,7 @@ void setStaticColor(int ledstrip, int red, int green, int blue) {
 	case 2:
 		// Set color for LED strip 2
 		for (int i = 0; i < LED2_Num; i++) {
-			LED2.setPixelColor(i, red, green, blue);
+			LED2.setPixelColor(i, LED2.Color(red, green, blue));
 		}
 		LED2.show();
 		break;
@@ -108,7 +84,7 @@ void setStaticColor(int ledstrip, int red, int green, int blue) {
 	case 3:
 		// Set color for LED strip 3
 		for (int i = 0; i < LED3_Num; i++) {
-			LED3.setPixelColor(i, red, green, blue);
+			LED3.setPixelColor(i, LED3.Color(red, green, blue));
 		}
 		LED3.show();
 		break;
@@ -116,7 +92,7 @@ void setStaticColor(int ledstrip, int red, int green, int blue) {
 	case 4:
 		// Set color for LED strip 4
 		for (int i = 0; i < LED4_Num; i++) {
-			LED4.setPixelColor(i, red, green, blue);
+			LED4.setPixelColor(i, LED4.Color(red, green, blue));
 		}
 		LED4.show();
 		break;
@@ -124,58 +100,65 @@ void setStaticColor(int ledstrip, int red, int green, int blue) {
 	}
 }
 
-unsigned long previousMillis = 0;
+
 const long interval = 20;
+unsigned long previousMillis1 = 0;
+unsigned long previousMillis2 = 0;
+unsigned long previousMillis3 = 0;
+unsigned long previousMillis4 = 0;
 
 bool isRainbow1 = false;
 bool isRainbow2 = false;
 bool isRainbow3 = false;
 bool isRainbow4 = false;
 
-void rainbowWave(int ledstrip) {
-
-	unsigned long currentMillis = millis();
-	if (currentMillis - previousMillis >= interval) {
-		previousMillis = currentMillis;
-
-		switch (ledstrip) {
-
-		case 1:
-			for (int i = 0; i < LED1_Num; i++) {
-				int colorWheel1_Position = (i * 256 / LED1_Num) + millis() / 10;
-				LED1.setPixelColor(i, Wheel(colorWheel1_Position & 255));
-			}
-			LED1.show();
-			break;
-
-		case 2:
-			for (int i = 0; i < LED2_Num; i++) {
-				int colorWheel2_Position = (i * 256 / LED2_Num) + millis() / 10;
-				LED2.setPixelColor(i, Wheel2(colorWheel2_Position & 255));
-			}
-			LED2.show();
-			break;
-
-		case 3:
-			for (int i = 0; i < LED3_Num; i++) {
-				int colorWheel3_Position = (i * 256 / LED3_Num) + millis() / 10;
-				LED3.setPixelColor(i, Wheel3(colorWheel3_Position & 255));
-			}
-			LED3.show();
-			break;
-
-		case 4:
-			for (int i = 0; i < LED4_Num; i++) {
-				int colorWheel4_Position = (i * 256 / LED4_Num) + millis() / 10;
-				LED4.setPixelColor(i, Wheel4(colorWheel4_Position & 255));
-			}
-			LED4.show();
-			break;
+void rainbowWave1() {
+	unsigned long currentMillis1 = millis();
+	if (currentMillis1 - previousMillis1 >= interval) {
+		previousMillis1 = currentMillis1;
+		for (int i = 0; i < LED1_Num; i++) {
+			int colorWheel1_Position = (i * 256 / LED1_Num) + millis() / 10;
+			LED1.setPixelColor(i, Wheel1(colorWheel1_Position & 255));
 		}
+		LED1.show();
+	}
+}
+void rainbowWave2() {
+	unsigned long currentMillis2 = millis();
+	if (currentMillis2 - previousMillis2 >= interval) {
+		previousMillis2 = currentMillis2;
+		for (int i = 0; i < LED2_Num; i++) {
+			int colorWheel2_Position = (i * 256 / LED2_Num) + millis() / 10;
+			LED2.setPixelColor(i, Wheel2(colorWheel2_Position & 255));
+		}
+		LED2.show();
+	}
+}
+void rainbowWave3() {
+	unsigned long currentMillis3 = millis();
+	if (currentMillis3 - previousMillis3 >= interval) {
+		previousMillis3 = currentMillis3;
+		for (int i = 0; i < LED3_Num; i++) {
+			int colorWheel3_Position = (i * 256 / LED3_Num) + millis() / 10;
+			LED3.setPixelColor(i, Wheel3(colorWheel3_Position & 255));
+		}
+		LED3.show();
+	}
+}
+void rainbowWave4() {
+	unsigned long currentMillis4 = millis();
+	if (currentMillis4 - previousMillis4 >= interval) {
+		previousMillis4 = currentMillis4;
+		for (int i = 0; i < LED4_Num; i++) {
+			int colorWheel4_Position = (i * 256 / LED4_Num) + millis() / 10;
+			LED4.setPixelColor(i, Wheel4(colorWheel4_Position & 255));
+		}
+		LED4.show();
 	}
 }
 
-uint32_t Wheel(byte WheelPos) {
+
+uint32_t Wheel1(byte WheelPos) {
 	if (WheelPos < 85) {
 		return LED1.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
 	}
