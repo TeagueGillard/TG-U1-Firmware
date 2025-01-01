@@ -1,5 +1,5 @@
 # TG-U1 Firmware
 
-Simhub LED control works, and can control it with SimHardware.
+It does not yet have all features, but has LED control with Sim Hardware and SimHub.
 
-Input devices still need more work before they will function correctly.
+Inputs will come with the next version
