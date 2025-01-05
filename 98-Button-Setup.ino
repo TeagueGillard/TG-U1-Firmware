@@ -1,5 +1,6 @@
 void ButtonSetup()
 {
+    // Button[ButtonNumber up to 128] = WhatTheButtonIsConnectedTo[ConnectedButtonNumber];
     Button[1] = buttonState1[0];
     Button[2] = buttonState1[1];
     Button[3] = buttonState1[2];
@@ -25,7 +26,7 @@ void ButtonSetup()
 
 void ButtonOutputs()
 {
-    for (int i = 0; i < sizeof(Button); i++)
+    for (int i = 0; i < 128; i++)
     {
         if (Button[i] == true)
         {
@@ -36,5 +37,11 @@ void ButtonOutputs()
         }
 
     }
+
+    Joystick.setXAxis(Expander4_A0);
+    Joystick.setYAxis(Expander4_A1);
+    Joystick.setZAxis(0);
+    Joystick.setRxAxis(Expander4_A2);
+    Joystick.setRyAxis(Expander4_A3);
 
 }

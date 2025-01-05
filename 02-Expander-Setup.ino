@@ -1,9 +1,35 @@
 #include <Wire.h>
+#include <Adafruit_ADS1X15.h>
+
 bool buttonState1[Expander1_Pins] = { 0 };
 bool buttonState2[Expander2_Pins] = { 0 };
 bool buttonState3[Expander3_Pins] = { 0 };
 bool buttonState4[Expander4_Pins] = { 0 };
 
+Adafruit_ADS1115 ads1;
+Adafruit_ADS1115 ads2;
+Adafruit_ADS1115 ads3;
+Adafruit_ADS1115 ads4;
+
+int16_t Expander1_A0 = 0;
+int16_t Expander1_A1 = 0;
+int16_t Expander1_A2 = 0;
+int16_t Expander1_A3 = 0;
+
+int16_t Expander2_A0 = 0;
+int16_t Expander2_A1 = 0;
+int16_t Expander2_A2 = 0;
+int16_t Expander2_A3 = 0;
+
+int16_t Expander3_A0 = 0;
+int16_t Expander3_A1 = 0;
+int16_t Expander3_A2 = 0;
+int16_t Expander3_A3 = 0;
+
+int16_t Expander4_A0 = 0;
+int16_t Expander4_A1 = 0;
+int16_t Expander4_A2 = 0;
+int16_t Expander4_A3 = 0;
 
 void ExpanderSetup()
 {
@@ -47,7 +73,8 @@ void ExpanderSetup()
 
         if (Expander1_Type == "AI")
         {
-
+            ads1.setGain(GAIN_ONE);
+            ads1.begin();
 
         }
     }
@@ -84,7 +111,8 @@ void ExpanderSetup()
 
         if (Expander2_Type == "AI")
         {
-
+            ads2.setGain(GAIN_ONE);
+            ads2.begin();
 
         }
     }
@@ -121,7 +149,8 @@ void ExpanderSetup()
 
         if (Expander3_Type == "AI")
         {
-
+            ads3.setGain(GAIN_ONE);
+            ads3.begin();
 
         }
     }
@@ -158,7 +187,8 @@ void ExpanderSetup()
 
         if (Expander4_Type == "AI")
         {
-
+            ads4.setGain(GAIN_ONE);
+            ads4.begin();
 
         }
     }
@@ -228,7 +258,10 @@ void ExpanderLoop()
 
         if (Expander1_Type == "AI")
         {
-
+            int16_t Expander1_A0 = ads1.readADC_SingleEnded(0);
+            int16_t Expander1_A1 = ads1.readADC_SingleEnded(1);
+            int16_t Expander1_A2 = ads1.readADC_SingleEnded(2);
+            int16_t Expander1_A3 = ads1.readADC_SingleEnded(3);
 
         }
     }
@@ -293,7 +326,10 @@ void ExpanderLoop()
 
         if (Expander2_Type == "AI")
         {
-
+            int16_t Expander2_A0 = ads2.readADC_SingleEnded(0);
+            int16_t Expander2_A1 = ads2.readADC_SingleEnded(1);
+            int16_t Expander2_A2 = ads2.readADC_SingleEnded(2);
+            int16_t Expander2_A3 = ads2.readADC_SingleEnded(3);
 
         }
     }
@@ -358,7 +394,10 @@ void ExpanderLoop()
 
         if (Expander3_Type == "AI")
         {
-
+            int16_t Expander3_A0 = ads3.readADC_SingleEnded(0);
+            int16_t Expander3_A1 = ads3.readADC_SingleEnded(1);
+            int16_t Expander3_A2 = ads3.readADC_SingleEnded(2);
+            int16_t Expander3_A3 = ads3.readADC_SingleEnded(3);
 
         }
     }
@@ -423,7 +462,10 @@ void ExpanderLoop()
 
         if (Expander4_Type == "AI")
         {
-
+            int16_t Expander4_A0 = ads4.readADC_SingleEnded(0);
+            int16_t Expander4_A1 = ads4.readADC_SingleEnded(1);
+            int16_t Expander4_A2 = ads4.readADC_SingleEnded(2);
+            int16_t Expander4_A3 = ads4.readADC_SingleEnded(3);
 
         }
     }

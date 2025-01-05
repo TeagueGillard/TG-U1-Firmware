@@ -113,7 +113,7 @@
 #define Expander1_IntPin 7		                  // Pin where the ident pin is connected
 #define Expander1_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander1_Pins 16		                    // How many I/O pins are on the expander
-#define Expander1_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
+#define Expander1_Address 0x24                  // The Addess of the shift register set by setting the Address pins to low or high
 
 // Expander 2
 #define Expander2_Enabled 1
@@ -122,7 +122,7 @@
 #define Expander2_IntPin 8		                  // Pin where the ident pin is connected
 #define Expander2_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander2_Pins 16		                    // How many I/O pins are on the expander
-#define Expander2_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
+#define Expander2_Address 0x21                  // The Addess of the shift register set by setting the Address pins to low or high
 
 // Expander 3
 #define Expander3_Enabled 1
@@ -131,7 +131,7 @@
 #define Expander3_IntPin 9		                  // Pin where the ident pin is connected
 #define Expander3_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander3_Pins 16		                    // How many I/O pins are on the expander
-#define Expander3_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
+#define Expander3_Address 0x22                  // The Addess of the shift register set by setting the Address pins to low or high
 
 // Expander 4
 #define Expander4_Enabled 1
@@ -140,4 +140,4 @@
 #define Expander4_IntPin 15	                    // Pin where the ident pin is connected
 #define Expander4_Type "AI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander4_Pins 4			                  // How many I/O pins are on the expander
-#define Expander4_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
+#define Expander4_Address 0x48                  // The Addess of the shift register set by setting the Address pins to low or high
