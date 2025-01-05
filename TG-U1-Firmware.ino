@@ -28,12 +28,6 @@
 
 
 
-// Button Setup
-#define Button1_Enabled 1		                    // 1 if connected, 0 if disconnected
-#define Button1_Pin = E1-1;			                // Pin where Button1 is connected
-
-
-
 // Encoder Setup
 #define Encoder1_Enabled = 1;		                // 1 if connected, 0 if disconnected
 #define Encoder1_PinA = E2-1;		                // Pin where Encoder pin A is connected
@@ -113,33 +107,37 @@
 
 
 // Expander 1
-#define Expander1_Enabled = 1;
-#define Expander1_SDA = SDA1;		                // SDA1 if using SDA, SDA2 if using SDA2
-#define Expander1_SCL = SCL1;		                // SCL1 if using SCL, SCL2 if using SCL2
-#define Expander1_IdentPin = 7;		              // Pin where the ident pin is connected
-#define Expander1_Type = DI;		                // DI for digital input, DO for digital outpout, AI for analog input
-#define Expander1_Pins = 16;		                // How many I/O pins are on the expander
+#define Expander1_Enabled 1
+#define Expander1_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2
+#define Expander1_SCL "SCL"		                  // SCL if using SCL, SCL1 if using SCL2
+#define Expander1_IntPin 7		                  // Pin where the ident pin is connected
+#define Expander1_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
+#define Expander1_Pins 16		                    // How many I/O pins are on the expander
+#define Expander1_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
 
 // Expander 2
-#define Expander2_Enabled = 1;
-#define Expander2_SDA = SDA1;		                // SDA1 if using SDA, SDA2 if using SDA2
-#define Expander2_SCL = SCL1;		                // SCL1 if using SCL, SCL2 if using SCL2
-#define Expander2_IdentPin = 8;		              // Pin where the ident pin is connected
-#define Expander2_Type = DI;		                // DI for digital input, DO for digital outpout, AI for analog input
-#define Expander2_Pins = 16;		                // How many I/O pins are on the expander
+#define Expander2_Enabled 1
+#define Expander2_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2
+#define Expander2_SCL "SCL"		                  // SCL if using SCL, SCL1 if using SCL2
+#define Expander2_IntPin 8		                  // Pin where the ident pin is connected
+#define Expander2_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
+#define Expander2_Pins 16		                    // How many I/O pins are on the expander
+#define Expander2_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
 
 // Expander 3
-#define Expander3_Enabled = 1;
-#define Expander3_SDA = SDA1;		                // SDA1 if using SDA, SDA2 if using SDA2
-#define Expander3_SCL = SCL1;		                // SCL1 if using SCL, SCL2 if using SCL2
-#define Expander3_IdentPin = 9;		              // Pin where the ident pin is connected
-#define Expander3_Type = DI;		                // DI for digital input, DO for digital outpout, AI for analog input
-#define Expander3_Pins = 16;		                // How many I/O pins are on the expander
+#define Expander3_Enabled 1
+#define Expander3_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2
+#define Expander3_SCL "SCL"		                  // SCL if using SCL, SCL1 if using SCL2
+#define Expander3_IntPin 9		                  // Pin where the ident pin is connected
+#define Expander3_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
+#define Expander3_Pins 16		                    // How many I/O pins are on the expander
+#define Expander3_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
 
 // Expander 4
-#define Expander4_Enabled = 1;
-#define Expander4_SDA = SDA2;		                // SDA1 if using SDA, SDA2 if using SDA2
-#define Expander4_SCL = SCL2;		                // SCL1 if using SCL, SCL2 if using SCL2
-#define Expander4_IdentPin = 15;	              // Pin where the ident pin is connected
-#define Expander4_Type = AI;		                // DI for digital input, DO for digital outpout, AI for analog input
-#define Expander4_Pins = 4;			                // How many I/O pins are on the expander
+#define Expander4_Enabled 1
+#define Expander4_SDA "SDA1"		                // SDA if using SDA, SDA1 if using SDA2
+#define Expander4_SCL "SCL1"		                // SCL if using SCL, SCL1 if using SCL2
+#define Expander4_IntPin 15	                    // Pin where the ident pin is connected
+#define Expander4_Type "AI"		                  // DI for digital input, DO for digital outpout, AI for analog input
+#define Expander4_Pins 4			                  // How many I/O pins are on the expander
+#define Expander4_Address 0x20                  // The Addess of the shift register set by setting the Address pins to low or high
