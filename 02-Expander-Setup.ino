@@ -71,8 +71,6 @@ void ExpanderSetup()
 
         if (Expander1_Type == "AI")
         {
-            ads1.setGain(GAIN_ONE);
-            ads1.begin();
 
         }
     }
@@ -102,8 +100,6 @@ void ExpanderSetup()
 
         if (Expander2_Type == "AI")
         {
-            ads2.setGain(GAIN_ONE);
-            ads2.begin();
 
         }
     }
@@ -133,26 +129,25 @@ void ExpanderSetup()
 
         if (Expander3_Type == "AI")
         {
-            ads3.setGain(GAIN_ONE);
-            ads3.begin();
 
         }
     }
-    /*
-      if (Expander4_Enabled == 1)
-      {
+
+    if (Expander4_Enabled == 1)
+    {
         if (Expander4_Type == "DI")
         {
-          if (Expander4_SDA == "SDA")
-          {
-            pca4.attach(Wire, Expander4_Address);
-            pca4.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
-            pca4.direction(PCA95x5::Direction::IN_ALL);
-          } else {
-            pca4.attach(Wire1, Expander4_Address);
-            pca4.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
-            pca4.direction(PCA95x5::Direction::IN_ALL);
-          }
+            if (Expander4_SDA == "SDA")
+            {
+                pca4.attach(Wire, Expander4_Address);
+                pca4.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca4.direction(PCA95x5::Direction::IN_ALL);
+            }
+            else {
+                pca4.attach(Wire1, Expander4_Address);
+                pca4.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca4.direction(PCA95x5::Direction::IN_ALL);
+            }
 
         }
 
@@ -163,11 +158,9 @@ void ExpanderSetup()
 
         if (Expander4_Type == "AI")
         {
-          ads4.setGain(GAIN_ONE);
-          ads4.begin();
 
         }
-      }*/
+    }
 }
 
 
@@ -191,10 +184,6 @@ void ExpanderLoop()
 
         if (Expander1_Type == "AI")
         {
-            int16_t Expander1_A0 = ads1.readADC_SingleEnded(0);
-            int16_t Expander1_A1 = ads1.readADC_SingleEnded(1);
-            int16_t Expander1_A2 = ads1.readADC_SingleEnded(2);
-            int16_t Expander1_A3 = ads1.readADC_SingleEnded(3);
 
         }
     }
@@ -217,10 +206,6 @@ void ExpanderLoop()
 
         if (Expander2_Type == "AI")
         {
-            int16_t Expander2_A0 = ads2.readADC_SingleEnded(0);
-            int16_t Expander2_A1 = ads2.readADC_SingleEnded(1);
-            int16_t Expander2_A2 = ads2.readADC_SingleEnded(2);
-            int16_t Expander2_A3 = ads2.readADC_SingleEnded(3);
 
         }
     }
@@ -243,22 +228,18 @@ void ExpanderLoop()
 
         if (Expander3_Type == "AI")
         {
-            int16_t Expander3_A0 = ads3.readADC_SingleEnded(0);
-            int16_t Expander3_A1 = ads3.readADC_SingleEnded(1);
-            int16_t Expander3_A2 = ads3.readADC_SingleEnded(2);
-            int16_t Expander3_A3 = ads3.readADC_SingleEnded(3);
 
         }
     }
-    /*
-      if (Expander4_Enabled == 1)
-      {
+
+    if (Expander4_Enabled == 1)
+    {
         if (Expander4_Type == "DI")
         {
-          uint16_t state4 = pca4.read();
-          for (int i = 0; i < 16; i++) {
-            buttonState4[i] = (state4 & (1 << i)) != 0;
-          }
+            uint16_t state4 = pca4.read();
+            for (int i = 0; i < 16; i++) {
+                buttonState4[i] = (state4 & (1 << i)) != 0;
+            }
 
         }
 
@@ -269,13 +250,9 @@ void ExpanderLoop()
 
         if (Expander4_Type == "AI")
         {
-          int16_t Expander4_A0 = ads4.readADC_SingleEnded(0);
-          int16_t Expander4_A1 = ads4.readADC_SingleEnded(1);
-          int16_t Expander4_A2 = ads4.readADC_SingleEnded(2);
-          int16_t Expander4_A3 = ads4.readADC_SingleEnded(3);
 
         }
-      }*/
+    }
 }
 
 
