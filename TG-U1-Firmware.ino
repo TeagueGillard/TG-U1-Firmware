@@ -8,22 +8,22 @@
 
 // LED Strip 1
 #define LED1_Enabled 1			                    // 1 if connected, 0 if disconnected
-#define LED1_Num 30				                      // Number of LEDS connected to strip one
+#define LED1_Num 60				                      // Number of LEDS connected to strip one
 #define LED1_Pin 0			                        // Pin where LED1 strip is connected
 
 // LED Strip 2
 #define LED2_Enabled 1			                    // 1 if connected, 0 if disconnected
-#define LED2_Num 30				                      // Number of LEDS connected to strip one
+#define LED2_Num 60				                      // Number of LEDS connected to strip one
 #define LED2_Pin 1			                        // Pin where LED2 strip is connected
 
 // LED Strip 3
 #define LED3_Enabled 1			                    // 1 if connected, 0 if disconnected
-#define LED3_Num 30				                      // Number of LEDS connected to strip one
+#define LED3_Num 60				                      // Number of LEDS connected to strip one
 #define LED3_Pin 2				                      // Pin where LED3 strip is connected
 
 // LED Strip 4
 #define LED4_Enabled 1			                    // 1 if connected, 0 if disconnected
-#define LED4_Num 30				                      // Number of LEDS connected to strip one
+#define LED4_Num 60				                      // Number of LEDS connected to strip one
 #define LED4_Pin 3				                      // Pin where LED4 strip is connected
 
 
@@ -108,8 +108,7 @@
 
 // Expander 1
 #define Expander1_Enabled 1
-#define Expander1_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2
-#define Expander1_SCL "SCL"		                  // SCL if using SCL, SCL1 if using SCL2
+#define Expander1_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2, only applys to DI & DO port expanders, analog port expanders are on SDA1
 #define Expander1_IntPin 7		                  // Pin where the ident pin is connected
 #define Expander1_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander1_Pins 16		                    // How many I/O pins are on the expander
@@ -117,8 +116,7 @@
 
 // Expander 2
 #define Expander2_Enabled 1
-#define Expander2_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2
-#define Expander2_SCL "SCL"		                  // SCL if using SCL, SCL1 if using SCL2
+#define Expander2_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2, only applys to DI & DO port expanders, analog port expanders are on SDA1
 #define Expander2_IntPin 8		                  // Pin where the ident pin is connected
 #define Expander2_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander2_Pins 16		                    // How many I/O pins are on the expander
@@ -126,8 +124,7 @@
 
 // Expander 3
 #define Expander3_Enabled 1
-#define Expander3_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2
-#define Expander3_SCL "SCL"		                  // SCL if using SCL, SCL1 if using SCL2
+#define Expander3_SDA "SDA"		                  // SDA if using SDA, SDA1 if using SDA2, only applys to DI & DO port expanders, analog port expanders are on SDA1
 #define Expander3_IntPin 9		                  // Pin where the ident pin is connected
 #define Expander3_Type "DI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander3_Pins 16		                    // How many I/O pins are on the expander
@@ -135,8 +132,7 @@
 
 // Expander 4
 #define Expander4_Enabled 1
-#define Expander4_SDA "SDA1"		                // SDA if using SDA, SDA1 if using SDA2
-#define Expander4_SCL "SCL1"		                // SCL if using SCL, SCL1 if using SCL2
+#define Expander4_SDA "SDA1"		                // SDA if using SDA, SDA1 if using SDA2, only applys to DI & DO port expanders, analog port expanders are on SDA1
 #define Expander4_IntPin 15	                    // Pin where the ident pin is connected
 #define Expander4_Type "AI"		                  // DI for digital input, DO for digital outpout, AI for analog input
 #define Expander4_Pins 4			                  // How many I/O pins are on the expander

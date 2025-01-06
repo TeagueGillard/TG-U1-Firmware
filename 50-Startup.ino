@@ -4,10 +4,10 @@
   // Setup for usb HID
 #include <Adafruit_TinyUSB.h>
 #include <TG_Joystick.h>
-bool Button[Expander1_Pins + Expander2_Pins + Expander3_Pins + Expander4_Pins];
+bool Button[32];
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
-    128,   //Button count
-    2,      //Hat switch count
+    128,           //Button count
+    2,             //Hat switch count
     true,          //X axis
     true,          //Y axis
     true,          //Z axis
@@ -20,7 +20,6 @@ Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
     false,         //Brake
     false);        //Steering
 
-//PinSetup();                                                                             // Sets the pins to the correct pin modes
 bool SIMHUB = false;
 
 
@@ -56,8 +55,6 @@ void setup1() {
 
     Joystick.begin(0);
 
-
-
 }
 
 
@@ -67,9 +64,9 @@ void setup() {
 #include <Adafruit_NeoPixel.h>
     if (LED1_Enabled == 1 || LED2_Enabled == 1 || LED3_Enabled == 1 || LED4_Enabled == 1)     // Checks if LEDS are enabled
     {
-        LEDSetup();                                                                             // Runs the LED Setup
+        //LEDSetup();                                                                             // Runs the LED Setup
     }
-    Serial.begin(115200);                                                                   // Starts serial communication
+    //Serial.begin(115200);                                                                   // Starts serial communication
 }
 
 
@@ -90,6 +87,7 @@ void loop1() {
         ExpanderLoop();                                                                         //  Runs the expander loop if expanders are enabled 
     }
 
+    ButtonSetup();
     ButtonOutputs();
     Joystick.sendState();
 
