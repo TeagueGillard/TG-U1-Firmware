@@ -31,7 +31,12 @@ void ButtonOutputs()
         else {
             Joystick.setButton(i, 1);  // Not pressed button
         }
-
+        if (buttonState2[i] == true) {
+            Joystick.setButton(i + 16, 0);  // Pressed button
+        }
+        else {
+            Joystick.setButton(i + 16, 1);  // Not pressed button
+        }
     }
 
 

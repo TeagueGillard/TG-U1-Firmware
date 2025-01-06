@@ -76,21 +76,22 @@ void ExpanderSetup()
 
         }
     }
-    /*
-      if (Expander2_Enabled == 1)
-      {
+
+    if (Expander2_Enabled == 1)
+    {
         if (Expander2_Type == "DI")
         {
-          if (Expander2_SDA == "SDA")
-          {
-            pca2.attach(Wire, Expander2_Address);
-            pca2.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
-            pca2.direction(PCA95x5::Direction::IN_ALL);
-          } else {
-            pca2.attach(Wire1, Expander2_Address);
-            pca2.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
-            pca2.direction(PCA95x5::Direction::IN_ALL);
-          }
+            if (Expander2_SDA == "SDA")
+            {
+                pca2.attach(Wire, Expander2_Address);
+                pca2.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca2.direction(PCA95x5::Direction::IN_ALL);
+            }
+            else {
+                pca2.attach(Wire1, Expander2_Address);
+                pca2.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca2.direction(PCA95x5::Direction::IN_ALL);
+            }
 
         }
 
@@ -101,12 +102,12 @@ void ExpanderSetup()
 
         if (Expander2_Type == "AI")
         {
-          ads2.setGain(GAIN_ONE);
-          ads2.begin();
+            ads2.setGain(GAIN_ONE);
+            ads2.begin();
 
         }
-      }
-
+    }
+    /*
       if (Expander3_Enabled == 1)
       {
         if (Expander3_Type == "DI")
@@ -196,15 +197,15 @@ void ExpanderLoop()
 
         }
     }
-    /*
-      if (Expander2_Enabled == 1)
-      {
+
+    if (Expander2_Enabled == 1)
+    {
         if (Expander2_Type == "DI")
         {
-          uint16_t state2 = pca2.read();
-          for (int i = 0; i < 16; i++) {
-            buttonState2[i] = (state2 & (1 << i)) != 0;
-          }
+            uint16_t state2 = pca2.read();
+            for (int i = 0; i < 16; i++) {
+                buttonState2[i] = (state2 & (1 << i)) != 0;
+            }
 
         }
 
@@ -215,14 +216,14 @@ void ExpanderLoop()
 
         if (Expander2_Type == "AI")
         {
-          int16_t Expander2_A0 = ads2.readADC_SingleEnded(0);
-          int16_t Expander2_A1 = ads2.readADC_SingleEnded(1);
-          int16_t Expander2_A2 = ads2.readADC_SingleEnded(2);
-          int16_t Expander2_A3 = ads2.readADC_SingleEnded(3);
+            int16_t Expander2_A0 = ads2.readADC_SingleEnded(0);
+            int16_t Expander2_A1 = ads2.readADC_SingleEnded(1);
+            int16_t Expander2_A2 = ads2.readADC_SingleEnded(2);
+            int16_t Expander2_A3 = ads2.readADC_SingleEnded(3);
 
         }
-      }
-
+    }
+    /*
       if (Expander3_Enabled == 1)
       {
         if (Expander3_Type == "DI")
