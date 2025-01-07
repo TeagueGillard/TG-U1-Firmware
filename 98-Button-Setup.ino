@@ -47,10 +47,10 @@ void ButtonOutputs()
 
 
 
-    Joystick.setXAxis(Expander4_A0);
-    Joystick.setYAxis(Expander4_A1);
-    Joystick.setZAxis(0);
-    Joystick.setRxAxis(Expander4_A2);
+    Joystick.setXAxis(analogRead(26));
+    Joystick.setYAxis(analogRead(27));
+    Joystick.setZAxis(analogRead(28));
+    Joystick.setRxAxis(0);
     Joystick.setRyAxis(Expander4_A3);
 
 }

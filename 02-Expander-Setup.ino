@@ -45,7 +45,8 @@ void ExpanderSetup()
 {
     Wire.begin();
     Wire1.begin();
-
+    pinMode(29, OUTPUT);
+    digitalWrite(29, HIGH); // Sets pin29(VREF) to 3.3v to power analog pins and external ADC
     if (Expander1_Enabled == 1)
     {
         if (Expander1_Type == "DI")

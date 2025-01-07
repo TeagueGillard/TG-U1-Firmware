@@ -87,8 +87,8 @@
 
 // Dual Clutch Setup
 #define DualClutch_Enabled = 1;					        // 1 if connected, 0 if disconnected
-#define DualClutch_MasterPin = A0;				      // Pin where the master clutch is connected
-#define DualClutch_SlavePin = A1;				        // Pin where the slave clutch is connected
+#define DualClutch_MasterPin = 26;				      // Pin where the master clutch is connected
+#define DualClutch_SlavePin = 27;				        // Pin where the slave clutch is connected
 #define DualClutch_BiteAdjButton = B6;			    // Button to hold when adjusting the clutch bite point
 #define DualClutch_BiteAdj_10_ENC = Enc1;		    // Encoder that adjusts the bite point by 10%
 #define DualClutch_BiteAdj_1_ENC = Enc2;		    // Encoder that adjusts the bite point by 1%
@@ -97,7 +97,7 @@
 
 // Rotary Switch Setup
 #define RotarySwitch1_Enabled = 1;
-#define RotarySwitch1_Pin = A2;
+#define RotarySwitch1_Pin = 28;
 
 
 
