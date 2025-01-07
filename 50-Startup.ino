@@ -64,9 +64,9 @@ void setup() {
 #include <Adafruit_NeoPixel.h>
     if (LED1_Enabled == 1 || LED2_Enabled == 1 || LED3_Enabled == 1 || LED4_Enabled == 1)     // Checks if LEDS are enabled
     {
-        //LEDSetup();                                                                             // Runs the LED Setup
+        LEDSetup();                                                                             // Runs the LED Setup
     }
-    //Serial.begin(115200);                                                                   // Starts serial communication
+    Serial.begin(115200);                                                                   // Starts serial communication
 }
 
 
