@@ -15,10 +15,10 @@ Adafruit_ADS1115 ads3;
 Adafruit_ADS1115 ads4;
 
 // Digital port expander pins
-bool buttonState1[Expander1_Pins] = { 0 };
-bool buttonState2[Expander2_Pins] = { 0 };
-bool buttonState3[Expander3_Pins] = { 0 };
-bool buttonState4[Expander4_Pins] = { 0 };
+bool Expander1_State[Expander1_Pins] = { 0 };
+bool Expander2_State[Expander2_Pins] = { 0 };
+bool Expander3_State[Expander3_Pins] = { 0 };
+bool Expander4_State[Expander4_Pins] = { 0 };
 
 // Analog port expander pins
 int16_t Expander1_A0 = 0;
@@ -173,7 +173,7 @@ void ExpanderLoop()
         {
             uint16_t state1 = pca1.read();
             for (int i = 0; i < 16; i++) {
-                buttonState1[i] = (state1 & (1 << i)) != 0;
+                Expander1_State[i] = (state1 & (1 << i)) != 0;
             }
 
         }
@@ -195,7 +195,7 @@ void ExpanderLoop()
         {
             uint16_t state2 = pca2.read();
             for (int i = 0; i < 16; i++) {
-                buttonState2[i] = (state2 & (1 << i)) != 0;
+                Expander2_State[i] = (state2 & (1 << i)) != 0;
             }
 
         }
@@ -217,7 +217,7 @@ void ExpanderLoop()
         {
             uint16_t state3 = pca3.read();
             for (int i = 0; i < 16; i++) {
-                buttonState3[i] = (state3 & (1 << i)) != 0;
+                Expander3_State[i] = (state3 & (1 << i)) != 0;
             }
 
         }
@@ -239,7 +239,7 @@ void ExpanderLoop()
         {
             uint16_t state4 = pca4.read();
             for (int i = 0; i < 16; i++) {
-                buttonState4[i] = (state4 & (1 << i)) != 0;
+                Expander4_State[i] = (state4 & (1 << i)) != 0;
             }
 
         }
