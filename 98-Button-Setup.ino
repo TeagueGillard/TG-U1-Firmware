@@ -45,10 +45,10 @@ void ButtonSend()
     for (int i = 0; i < virtual_Buttons; i++)
     {
         if (Button[i] == true) {
-            Joystick.setButton(i - 1, 0);  // Pressed button
+            Joystick.setButton(i - 1, 1);  // Pressed button
         }
         else {
-            Joystick.setButton(i - 1, 1);  // Not pressed button
+            Joystick.setButton(i - 1, 0);  // Not pressed button
         }
 
     }

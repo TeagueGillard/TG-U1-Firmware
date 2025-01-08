@@ -54,12 +54,12 @@ void ExpanderSetup()
             if (Expander1_SDA == "SDA")
             {
                 pca1.attach(Wire, Expander1_Address);
-                pca1.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca1.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca1.direction(PCA95x5::Direction::IN_ALL);
             }
             else {
                 pca1.attach(Wire1, Expander1_Address);
-                pca1.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca1.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca1.direction(PCA95x5::Direction::IN_ALL);
             }
 
@@ -83,12 +83,12 @@ void ExpanderSetup()
             if (Expander2_SDA == "SDA")
             {
                 pca2.attach(Wire, Expander2_Address);
-                pca2.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca2.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca2.direction(PCA95x5::Direction::IN_ALL);
             }
             else {
                 pca2.attach(Wire1, Expander2_Address);
-                pca2.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca2.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca2.direction(PCA95x5::Direction::IN_ALL);
             }
 
@@ -112,12 +112,12 @@ void ExpanderSetup()
             if (Expander3_SDA == "SDA")
             {
                 pca3.attach(Wire, Expander3_Address);
-                pca3.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca3.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca3.direction(PCA95x5::Direction::IN_ALL);
             }
             else {
                 pca3.attach(Wire1, Expander3_Address);
-                pca3.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca3.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca3.direction(PCA95x5::Direction::IN_ALL);
             }
 
@@ -141,12 +141,12 @@ void ExpanderSetup()
             if (Expander4_SDA == "SDA")
             {
                 pca4.attach(Wire, Expander4_Address);
-                pca4.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca4.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca4.direction(PCA95x5::Direction::IN_ALL);
             }
             else {
                 pca4.attach(Wire1, Expander4_Address);
-                pca4.polarity(PCA95x5::Polarity::ORIGINAL_ALL);
+                pca4.polarity(PCA95x5::Polarity::INVERTED_ALL);
                 pca4.direction(PCA95x5::Direction::IN_ALL);
             }
 
