@@ -34,6 +34,22 @@ void ButtonLoop()
     Button[30] = Encoder7[1];
     Button[31] = Encoder8[0];
     Button[32] = Encoder8[1];
+
+    Button[33] = RotarySwitch1[1];
+    Button[34] = RotarySwitch1[2];
+    Button[35] = RotarySwitch1[3];
+    Button[36] = RotarySwitch1[4];
+    Button[37] = RotarySwitch1[5];
+    Button[38] = RotarySwitch1[6];
+    Button[39] = RotarySwitch1[7];
+    Button[40] = RotarySwitch1[8];
+    Button[41] = RotarySwitch1[9];
+    Button[42] = RotarySwitch1[10];
+    Button[43] = RotarySwitch1[11];
+    Button[44] = RotarySwitch1[12];
+
+    Button[45] = MWay1_Push;
+
     
 
 }

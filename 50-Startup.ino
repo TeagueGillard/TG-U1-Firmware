@@ -5,8 +5,11 @@
 #include <Adafruit_TinyUSB.h>
 #include <TG_Joystick.h>
 bool Button[virtual_Buttons];
+bool RotarySwitch1[12];
+bool MWay1_Push = 0;
+bool MWay2_Push = 0;
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
-    128,           //Button count
+    virtual_Buttons,           //Button count
     2,             //Hat switch count
     true,          //X axis
     true,          //Y axis
@@ -86,6 +89,9 @@ void loop1() {
 
     EncoderLoop();
     ButtonLoop();
+    MWaySwitchLoop();
+    RotarySwitchLoop();
+    RotarySwitchExtra();
     ButtonSend();
 
 }
