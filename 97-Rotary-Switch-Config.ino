@@ -1,5 +1,5 @@
 // Define you Extra inputs here, you can have as many as you like, just make sure you set them in 98-Button-Setup
-// Example: boool ExtraInputName[1 for buttons / 2 for encoders] = {Default State(Normally 0)};
+// Example: bool ExtraInputName[1 for buttons / 2 for encoders] = {Default State(Normally 0)};
 bool Extra_Encoder1[2] = {0};
 bool Extra_Encoder2[2] = {0};
 bool Extra_Encoder3[2] = {0};
