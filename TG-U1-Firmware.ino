@@ -36,56 +36,56 @@
 #define Encoder1_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder1_PinA Expander2_State[1]		    // Pin where Encoder pin A is connected
 #define Encoder1_PinB Expander2_State[0]		    // Pin where the Encoder pin B is connected
-#define Encoder1_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder1_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder2_Enabled 1		                  // 1 if connected, 0 if disconnected
 #define Encoder2_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
 #define Encoder2_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder2_PinA Expander2_State[3]		    // Pin where Encoder pin A is connected
 #define Encoder2_PinB Expander2_State[2]		    // Pin where the Encoder pin B is connected
-#define Encoder2_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder2_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder3_Enabled 1		                  // 1 if connected, 0 if disconnected
 #define Encoder3_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
 #define Encoder3_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder3_PinA Expander2_State[5]		    // Pin where Encoder pin A is connected
 #define Encoder3_PinB Expander2_State[4] 	      // Pin where the Encoder pin B is connected
-#define Encoder3_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder3_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder4_Enabled 1		                  // 1 if connected, 0 if disconnected
 #define Encoder4_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
 #define Encoder4_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder4_PinA Expander2_State[7]		    // Pin where Encoder pin A is connected
 #define Encoder4_PinB Expander2_State[6]		    // Pin where the Encoder pin B is connected
-#define Encoder4_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder4_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder5_Enabled 1		                  // 1 if connected, 0 if disconnected
 #define Encoder5_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
 #define Encoder5_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder5_PinA Expander2_State[9]		    // Pin where Encoder pin A is connected
 #define Encoder5_PinB Expander2_State[8]		    // Pin where the Encoder pin B is connected
-#define Encoder5_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder5_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder6_Enabled 1		                  // 1 if connected, 0 if disconnected
 #define Encoder6_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
 #define Encoder6_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder6_PinA Expander2_State[11]		    // Pin where Encoder pin A is connected
 #define Encoder6_PinB Expander2_State[10]		    // Pin where the Encoder pin B is connected
-#define Encoder6_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder6_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder7_Enabled 1		                  // 1 if connected, 0 if disconnected
 #define Encoder7_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
 #define Encoder7_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder7_PinA Expander2_State[13]		    // Pin where Encoder pin A is connected
 #define Encoder7_PinB Expander2_State[12]		    // Pin where the Encoder pin B is connected
-#define Encoder7_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder7_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder8_Enabled 1		                  // 1 if connected, 0 if disconnected
 #define Encoder8_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
 #define Encoder8_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder8_PinA Expander2_State[15]		    // Pin where Encoder pin A is connected
 #define Encoder8_PinB Expander2_State[14]		    // Pin where the Encoder pin B is connected
-#define Encoder8_IntPin Expander2_IntPin        // Expander Interupt pin that the encoders are connected to (Doesnt work correctly without using Interupts)
+#define Encoder8_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 
 
@@ -98,6 +98,8 @@
 #define MWay1_PinP Expander3_State[4]			      // Pin where the Push button press is connected
 #define MWay1_PinA Expander3_State[5]			      // Pin where the Encoder pin A is connected
 #define MWay1_PinB Expander3_State[6]			      // Pin where the Encoder pin B is connected
+#define MWay1_Enc_Time 100                      // How long(in ms) the button will be active for before refreshing
+#define MWay1_IntPin Expander3_IntPin           // Either the Expander Interupt pin or the same as PinA
 
 // 7-Way Switch 2 - This switch is set to POV1 so does not need to be set in 98-Button-Config
 #define MWay2_Enabled 1			                    // 1 if connected, 0 if disconnected
@@ -108,6 +110,8 @@
 #define MWay2_PinP Expander3_State[11]			    // Pin where the Push button press is connected
 #define MWay2_PinA Expander3_State[12]		      // Pin where the Encoder pin A is connected
 #define MWay2_PinB Expander3_State[13]			    // Pin where the Encoder pin B is connected
+#define MWay2_Enc_Time 100                      // How long(in ms) the button will be active for before refreshing
+#define MWay2_IntPin Expander3_IntPin           // Either the Expander Interupt pin or the same as PinA
 
 
 
@@ -116,8 +120,9 @@
 #define DualClutch_MasterPin = 26;				      // Pin where the master clutch is connected
 #define DualClutch_SlavePin = 27;				        // Pin where the slave clutch is connected
 #define DualClutch_BiteAdjButton = B6;			    // Button to hold when adjusting the clutch bite point
-#define DualClutch_BiteAdj_10_ENC = Enc1;		    // Encoder that adjusts the bite point by 10%
-#define DualClutch_BiteAdj_1_ENC = Enc2;		    // Encoder that adjusts the bite point by 1%
+// {EncoderX[Decrease], EncoderX[Increase]} You can also use buttons or anything else here, first value will decrease the bite point second will increase it
+#define DualClutch_BiteAdj_10[2] = {Encoder1[0], Encoder1[1]};		   // Input that adjusts the bite point by 10%
+#define DualClutch_BiteAdj_1[2] = {Encoder5[0], Encoder5[1]};		     // Input that adjusts the bite point by 1%
 
 
 

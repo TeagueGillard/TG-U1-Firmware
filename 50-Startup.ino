@@ -8,6 +8,7 @@ bool Button[virtual_Buttons];
 bool RotarySwitch1[12];
 bool MWay1_Push = 0;
 bool MWay2_Push = 0;
+bool MWay1_Enc_Inv = 0;
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
     virtual_Buttons,           //Button count
     2,             //Hat switch count

@@ -1,3 +1,7 @@
+bool MWay1_Enc[2] = {0};
+bool MWay2_Enc[2] = {0};
+unsigned long MWay1_PreMillis = 0;
+bool MWay1_PinA_LastState = 0;
 void MWaySwitchLoop()
 {
   if (MWay1_Enabled == 1)
@@ -27,6 +31,33 @@ void MWaySwitchLoop()
       MWay1_Push = 1;
     } else {
       MWay1_Push = 0;
+    }
+
+    if (digitalRead(MWay1_IntPin) == LOW)
+    {
+      int MWay1_PinA_State = MWay1_PinA;
+      unsigned long MWay1_Millis = millis();
+      if ((MWay1_Millis - MWay1_PreMillis) >= MWay1_Enc_Time)
+      {
+        if (MWay1_PinA_State != MWay1_PinA_LastState)
+        {
+          MWay1_PreMillis = MWay1_Millis;
+          if (MWay1_PinB != MWay1_PinA_State)
+          {
+            MWay1_Enc[0] = 0;
+            MWay1_Enc[1] = 1;
+            MWay1_Enc_Inv = 1;
+          } else {
+            MWay1_Enc[0] = 1;
+            MWay1_Enc[1] = 0;
+            MWay1_Enc_Inv = 1;
+          }
+        } else {
+        MWay1_Enc[0] = 0;
+        MWay1_Enc[1] = 0;
+        }
+      }
+      MWay1_PinA_LastState = MWay1_PinA_State;
     }
   }
 

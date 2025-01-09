@@ -49,6 +49,12 @@ void ButtonLoop()
     Button[44] = RotarySwitch1[12];
 
     Button[45] = MWay1_Push;
+    Button[46] = MWay1_Enc[0];
+    Button[47] = MWay1_Enc[1];
+
+    Button[48] = MWay2_Push;
+    Button[49] = MWay2_Enc[0];
+    Button[50] = MWay2_Enc[1];
 
     
 
