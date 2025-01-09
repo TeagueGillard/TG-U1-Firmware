@@ -9,6 +9,8 @@ bool RotarySwitch1[12];
 bool MWay1_Push = 0;
 bool MWay2_Push = 0;
 bool MWay1_Enc_Inv = 0;
+int BitePoint = DualClutch_StartBitePoint;
+int DualClutchValue = 0;
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
     virtual_Buttons,           //Button count
     2,             //Hat switch count
@@ -17,7 +19,7 @@ Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
     true,          //Z axis
     true,          //Rx axis 
     true,          //Ry axis
-    false,         //Rz axis 
+    true,          //Rz axis 
     false,         //Rudder
     false,         //Throttle
     false,         //Accelerator
@@ -93,6 +95,7 @@ void loop1() {
     MWaySwitchLoop();
     RotarySwitchLoop();
     RotarySwitchExtra();
+    DualClutchLoop();
     ButtonSend();
 
 }

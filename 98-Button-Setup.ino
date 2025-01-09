@@ -18,16 +18,16 @@ void ButtonLoop()
     Button[15] = Expander1_State[14];
     Button[16] = Expander1_State[15];
 
-    Button[17] = Encoder1[0];
-    Button[18] = Encoder1[1];
+    Button[17] = Extra_Encoder1[0];
+    Button[18] = Extra_Encoder1[1];
     Button[19] = Encoder2[0];
     Button[20] = Encoder2[1];
     Button[21] = Encoder3[0];
     Button[22] = Encoder3[1];
     Button[23] = Encoder4[0];
     Button[24] = Encoder4[1];
-    Button[25] = Encoder5[0];
-    Button[26] = Encoder5[1];
+    Button[25] = Extra_Encoder2[0];
+    Button[26] = Extra_Encoder2[1];
     Button[27] = Encoder6[0];
     Button[28] = Encoder6[1];
     Button[29] = Encoder7[0];
@@ -56,6 +56,11 @@ void ButtonLoop()
     Button[49] = MWay2_Enc[0];
     Button[50] = MWay2_Enc[1];
 
+    Button[51] = Extra_Encoder3[0];
+    Button[52] = Extra_Encoder3[1];
+    Button[53] = Extra_Encoder4[0];
+    Button[54] = Extra_Encoder4[1];
+
     
 
 }
@@ -75,11 +80,12 @@ void ButtonSend()
 
     }
 
-    Joystick.setXAxis(analogRead(26));
-    Joystick.setYAxis(analogRead(27));
-    Joystick.setZAxis(analogRead(28));
+    Joystick.setXAxis(0);
+    Joystick.setYAxis(0);
+    Joystick.setZAxis(DualClutchValue);
     Joystick.setRxAxis(0);
-    Joystick.setRyAxis(Expander4_A3);
+    Joystick.setRyAxis(0);
+    Joystick.setRzAxis(BitePoint * 10);
 
     Joystick.sendState();
 }

@@ -1,18 +1,70 @@
+// Define you Extra inputs here, you can have as many as you like, just make sure you set them in 98-Button-Setup
+// Example: boool ExtraInputName[1 for buttons / 2 for encoders] = {Default State(Normally 0)};
+bool Extra_Encoder1[2] = {0};
+bool Extra_Encoder2[2] = {0};
+bool Extra_Encoder3[2] = {0};
+bool Extra_Encoder4[2] = {0};
+bool Bite_Enc_10[2] = {0};
+bool Bite_Enc_1[2] = {0};
+
+
+
 void RotarySwitchExtra()
 {
   if (RotarySwitch1[1] == 1)
   {
     // Add anything you want to happen when the rotary switch is in pos1 here
+    Extra_Encoder1[0] = Encoder1[0];            // Moves Encoder1 and Encoder 5 onto sperate bindings
+    Extra_Encoder1[1] = Encoder1[1];            // so they can be used as bite point without doing other actions
+    Extra_Encoder2[0] = Encoder5[0];            // or to get extra "Virtual" encoders from the same physical encoders
+    Extra_Encoder2[1] = Encoder5[1];
+
+    // Unused bindings
+    Extra_Encoder3[0] = 0;                      // Sets other bindings for Encoder1 and Encoder 5 back to 0 so they no longer output
+    Extra_Encoder3[1] = 0;                      // Do this in EVERY switch position for EVERY button/encoder to ensure correct opperation
+    Extra_Encoder4[0] = 0;
+    Extra_Encoder4[1] = 0;
+    Bite_Enc_10[0] = 0;
+    Bite_Enc_10[1] = 0;
+    Bite_Enc_1[0] = 0;
+    Bite_Enc_1[1] = 0;
+
 
   }
   if (RotarySwitch1[2] == 1)
   {
     // Add anything for pos2 etc
+    Extra_Encoder3[0] = Encoder1[0];
+    Extra_Encoder3[1] = Encoder1[1];
+    Extra_Encoder4[0] = Encoder5[0];
+    Extra_Encoder4[1] = Encoder5[1];
 
+    // Unused Bindings
+    Extra_Encoder1[0] = 0;
+    Extra_Encoder1[1] = 0;
+    Extra_Encoder2[0] = 0;
+    Extra_Encoder2[1] = 0;
+    Bite_Enc_10[0] = 0;
+    Bite_Enc_10[1] = 0;
+    Bite_Enc_1[0] = 0;
+    Bite_Enc_1[1] = 0;
   }
   if (RotarySwitch1[3] == 1)
   {
+    Bite_Enc_10[0] = Encoder1[0];
+    Bite_Enc_10[1] = Encoder1[1];
+    Bite_Enc_1[0] = Encoder5[0];
+    Bite_Enc_1[1] = Encoder5[1];
 
+    // Unused Bindings
+    Extra_Encoder1[0] = 0;
+    Extra_Encoder1[1] = 0;
+    Extra_Encoder2[0] = 0;
+    Extra_Encoder2[1] = 0;
+    Extra_Encoder3[0] = 0;
+    Extra_Encoder3[1] = 0;
+    Extra_Encoder4[0] = 0;
+    Extra_Encoder4[1] = 0;
   }
   if (RotarySwitch1[4] == 1)
   {

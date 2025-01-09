@@ -15,17 +15,17 @@
 
 // LED Strip 2
 #define LED2_Enabled 1			                    // 1 if connected, 0 if disconnected
-#define LED2_Num 30				                      // Number of LEDS connected to strip one
+#define LED2_Num 60				                      // Number of LEDS connected to strip one
 #define LED2_Pin 1			                        // Pin where LED2 strip is connected
 
 // LED Strip 3
 #define LED3_Enabled 1			                    // 1 if connected, 0 if disconnected
-#define LED3_Num 1				                      // Number of LEDS connected to strip one
+#define LED3_Num 60				                      // Number of LEDS connected to strip one
 #define LED3_Pin 2				                      // Pin where LED3 strip is connected
 
 // LED Strip 4
 #define LED4_Enabled 1			                    // 1 if connected, 0 if disconnected
-#define LED4_Num 1				                      // Number of LEDS connected to strip one
+#define LED4_Num 60				                      // Number of LEDS connected to strip one
 #define LED4_Pin 3				                      // Pin where LED4 strip is connected
 
 
@@ -115,14 +115,17 @@
 
 
 
-// Dual Clutch Setup
-#define DualClutch_Enabled = 1;					        // 1 if connected, 0 if disconnected
-#define DualClutch_MasterPin = 26;				      // Pin where the master clutch is connected
-#define DualClutch_SlavePin = 27;				        // Pin where the slave clutch is connected
-#define DualClutch_BiteAdjButton = B6;			    // Button to hold when adjusting the clutch bite point
-// {EncoderX[Decrease], EncoderX[Increase]} You can also use buttons or anything else here, first value will decrease the bite point second will increase it
-#define DualClutch_BiteAdj_10[2] = {Encoder1[0], Encoder1[1]};		   // Input that adjusts the bite point by 10%
-#define DualClutch_BiteAdj_1[2] = {Encoder5[0], Encoder5[1]};		     // Input that adjusts the bite point by 1%
+// Dual Clutch Setup - Dual Clutch Bite Point(x10) is set on Rz axis(55% = 550 of 1000)
+#define DualClutch_Enabled 1					                                // 1 if connected, 0 if disconnected
+#define DualClutch_MasterPin 26				                                // Pin where the master clutch is connected
+#define DualClutch_SlavePin 27				                                // Pin where the slave clutch is connected
+#define DualClutch_StartBitePoint 65                                  // The bite point that will be set when the controller is loaded(in %)
+#define DualClutch_BiteAdjButton RotarySwitch1[3]			                // Button to hold when adjusting the clutch bite point
+#define DualClutch_BiteAdj_Plus10 Bite_Enc_10[0]		                  // Input that Increases the bite point by 10%
+#define DualClutch_BiteAdj_Minus10 Bite_Enc_10[1]		                  // Input that Decreases the bite point by 10%
+#define DualClutch_BiteAdj_Plus1 Bite_Enc_1[0]		                    // Input that Increases the bite point by 1%
+#define DualClutch_BiteAdj_Minus1 Bite_Enc_1[1]		                    // Input that Decreases the bite point by 1%
+#define DualClutch_BiteDebounce 100                                   // How long(in ms) the button will be active for before refreshing
 
 
 
