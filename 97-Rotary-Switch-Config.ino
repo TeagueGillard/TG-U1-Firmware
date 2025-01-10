@@ -11,7 +11,27 @@ bool Bite_Enc_1[2] = {0};
 
 void RotarySwitchExtra()
 {
-  if (RotarySwitch1[1] == 1)
+  if (RotarySwitch1[0] == 1 ) // Not connected or not set
+  {
+    // Add anything you want to happen when the rotary switch is not connected or not set here
+    Extra_Encoder1[0] = Encoder1[0];            // Moves Encoder1 and Encoder 5 onto sperate bindings
+    Extra_Encoder1[1] = Encoder1[1];            // so they can be used as bite point without doing other actions
+    Extra_Encoder2[0] = Encoder5[0];            // or to get extra "Virtual" encoders from the same physical encoders
+    Extra_Encoder2[1] = Encoder5[1];
+
+    // Unused bindings
+    Extra_Encoder3[0] = 0;                      // Sets other bindings for Encoder1 and Encoder 5 back to 0 so they no longer output
+    Extra_Encoder3[1] = 0;                      // Do this in EVERY switch position for EVERY button/encoder to ensure correct opperation
+    Extra_Encoder4[0] = 0;
+    Extra_Encoder4[1] = 0;
+    Bite_Enc_10[0] = 0;
+    Bite_Enc_10[1] = 0;
+    Bite_Enc_1[0] = 0;
+    Bite_Enc_1[1] = 0;
+    Encoder1_Type = "Incremental";
+    Encoder5_Type = "Incremental";
+  }
+  if (RotarySwitch1[1] == 1 ) // Position 1
   {
     // Add anything you want to happen when the rotary switch is in pos1 here
     Extra_Encoder1[0] = Encoder1[0];            // Moves Encoder1 and Encoder 5 onto sperate bindings
@@ -28,10 +48,12 @@ void RotarySwitchExtra()
     Bite_Enc_10[1] = 0;
     Bite_Enc_1[0] = 0;
     Bite_Enc_1[1] = 0;
+    Encoder1_Type = "Incremental";
+    Encoder5_Type = "Incremental";
 
 
   }
-  if (RotarySwitch1[2] == 1)
+  if (RotarySwitch1[2] == 1) // Position 2
   {
     // Add anything for pos2 etc
     Extra_Encoder3[0] = Encoder1[0];
@@ -48,8 +70,10 @@ void RotarySwitchExtra()
     Bite_Enc_10[1] = 0;
     Bite_Enc_1[0] = 0;
     Bite_Enc_1[1] = 0;
+    Encoder1_Type = "Incremental";
+    Encoder5_Type = "Incremental";
   }
-  if (RotarySwitch1[3] == 1)
+  if (RotarySwitch1[3] == 1) // Position 3
   {
     Bite_Enc_10[0] = Encoder1[0];
     Bite_Enc_10[1] = Encoder1[1];
@@ -65,40 +89,58 @@ void RotarySwitchExtra()
     Extra_Encoder3[1] = 0;
     Extra_Encoder4[0] = 0;
     Extra_Encoder4[1] = 0;
+    Encoder1_Type = "Incremental";
+    Encoder5_Type = "Incremental";
   }
-  if (RotarySwitch1[4] == 1)
+  if (RotarySwitch1[4] == 1) // Position 4
+  {
+    Encoder1_Type = "Absolute";
+    Encoder5_Type = "Absolute";
+
+    // Unused Bindings
+    Extra_Encoder1[0] = 0;
+    Extra_Encoder1[1] = 0;
+    Extra_Encoder2[0] = 0;
+    Extra_Encoder2[1] = 0;
+    Extra_Encoder3[0] = 0;
+    Extra_Encoder3[1] = 0;
+    Extra_Encoder4[0] = 0;
+    Extra_Encoder4[1] = 0;
+    Bite_Enc_10[0] = 0;
+    Bite_Enc_10[1] = 0;
+    Bite_Enc_1[0] = 0;
+    Bite_Enc_1[1] = 0;
+
+  }
+  if (RotarySwitch1[5] == 1) // Position 5
   {
 
   }
-  if (RotarySwitch1[5] == 1)
+  if (RotarySwitch1[6] == 1) // Position 6
   {
 
   }
-  if (RotarySwitch1[6] == 1)
+  if (RotarySwitch1[7] == 1) // Position 7
   {
 
   }
-  if (RotarySwitch1[7] == 1)
+  if (RotarySwitch1[8] == 1) // Position 8
   {
 
   }
-  if (RotarySwitch1[8] == 1)
+  if (RotarySwitch1[9] == 1) // Position 9
   {
 
   }
-  if (RotarySwitch1[9] == 1)
+  if (RotarySwitch1[10] == 1) // Position 10
   {
 
   }
-  if (RotarySwitch1[10] == 1)
+  if (RotarySwitch1[11] == 1) // Position 11
   {
 
   }
-  if (RotarySwitch1[11] == 1)
-  {
-
-  }
-  if (RotarySwitch1[12] == 1)
+  if (RotarySwitch1[12] == 1) // Position 12
   {
 
   }

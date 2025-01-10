@@ -6,7 +6,7 @@
 
 // Button Setup
 #define physical_Buttons 32                     // How many buttons are plugged in
-#define virtual_Buttons 64                      // (Max 128) How many buttons will show in a game etc
+#define virtual_Buttons 128                     // (Max 128) How many buttons will show in a game etc
 
 // LED Strip 1
 #define LED1_Enabled 1			                    // 1 if connected, 0 if disconnected
@@ -32,56 +32,64 @@
 
 // Encoder Setup - Push function is set the same as a normal button
 #define Encoder1_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder1_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder1_Type = "Absolute";             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder1_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder1_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder1_PinA Expander2_State[1]		    // Pin where Encoder pin A is connected
 #define Encoder1_PinB Expander2_State[0]		    // Pin where the Encoder pin B is connected
 #define Encoder1_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder2_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder2_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder2_Type = "Incremental";          // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder2_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder2_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder2_PinA Expander2_State[3]		    // Pin where Encoder pin A is connected
 #define Encoder2_PinB Expander2_State[2]		    // Pin where the Encoder pin B is connected
 #define Encoder2_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder3_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder3_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder3_Type = "Incremental";          // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder3_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder3_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder3_PinA Expander2_State[5]		    // Pin where Encoder pin A is connected
 #define Encoder3_PinB Expander2_State[4] 	      // Pin where the Encoder pin B is connected
 #define Encoder3_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder4_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder4_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder4_Type = "Incremental";          // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder4_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder4_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder4_PinA Expander2_State[7]		    // Pin where Encoder pin A is connected
 #define Encoder4_PinB Expander2_State[6]		    // Pin where the Encoder pin B is connected
 #define Encoder4_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder5_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder5_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder5_Type = "Absolute";             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder5_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder5_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder5_PinA Expander2_State[9]		    // Pin where Encoder pin A is connected
 #define Encoder5_PinB Expander2_State[8]		    // Pin where the Encoder pin B is connected
 #define Encoder5_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder6_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder6_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder6_Type = "Incremental";          // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder6_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder6_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder6_PinA Expander2_State[11]		    // Pin where Encoder pin A is connected
 #define Encoder6_PinB Expander2_State[10]		    // Pin where the Encoder pin B is connected
 #define Encoder6_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder7_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder7_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder7_Type = "Incremental";          // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder7_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder7_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder7_PinA Expander2_State[13]		    // Pin where Encoder pin A is connected
 #define Encoder7_PinB Expander2_State[12]		    // Pin where the Encoder pin B is connected
 #define Encoder7_IntPin Expander2_IntPin        // Either the Expander Interupt pin or the same as PinA
 
 #define Encoder8_Enabled 1		                  // 1 if connected, 0 if disconnected
-#define Encoder8_Type "Incremental"             // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch - 12 positions)
+String  Encoder8_Type = "Incremental";          // Incremental for 2 outputs(clockwise and anti-clockwise) or Absolute(virtual rotary switch)
+#define Encoder8_Absolute_Pos 12                // How many virtual positions the switch will have Absolute(virtual rotary switch)
 #define Encoder8_Time 100                       // How long(in ms) the button will be active for before refreshing
 #define Encoder8_PinA Expander2_State[15]		    // Pin where Encoder pin A is connected
 #define Encoder8_PinB Expander2_State[14]		    // Pin where the Encoder pin B is connected

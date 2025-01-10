@@ -61,6 +61,84 @@ void ButtonLoop()
     Button[53] = Extra_Encoder4[0];
     Button[54] = Extra_Encoder4[1];
 
+    Button[55] = Encoder1Abs[1];
+    Button[56] = Encoder1Abs[2];
+    Button[57] = Encoder1Abs[3];
+    Button[58] = Encoder1Abs[4];
+    Button[59] = Encoder1Abs[5];
+    Button[60] = Encoder1Abs[6];
+    Button[61] = Encoder1Abs[7];
+    Button[62] = Encoder1Abs[8];
+    Button[63] = Encoder1Abs[9];
+    Button[64] = Encoder1Abs[10];
+    Button[65] = Encoder1Abs[11];
+    Button[66] = Encoder1Abs[12];
+
+    Button[67] = Encoder5Abs[1];
+    Button[68] = Encoder5Abs[2];
+    Button[69] = Encoder5Abs[3];
+    Button[70] = Encoder5Abs[4];
+    Button[71] = Encoder5Abs[5];
+    Button[72] = Encoder5Abs[6];
+    Button[73] = Encoder5Abs[7];
+    Button[74] = Encoder5Abs[8];
+    Button[75] = Encoder5Abs[9];
+    Button[76] = Encoder5Abs[10];
+    Button[77] = Encoder5Abs[11];
+    Button[78] = Encoder5Abs[12];
+
+    Button[79] = 0;
+    Button[80] = 0;
+    Button[81] = 0;
+    Button[82] = 0;
+    Button[83] = 0;
+    Button[84] = 0;
+    Button[85] = 0;
+    Button[86] = 0;
+    Button[87] = 0;
+    Button[88] = 0;
+    Button[89] = 0;
+    Button[90] = 0;
+    Button[91] = 0;
+    Button[92] = 0;
+    Button[93] = 0;
+    Button[94] = 0;
+    Button[95] = 0;
+    Button[96] = 0;
+    Button[97] = 0;
+    Button[98] = 0;
+    Button[99] = 0;
+    Button[100] = 0;
+    Button[101] = 0;
+    Button[102] = 0;
+    Button[103] = 0;
+    Button[104] = 0;
+    Button[105] = 0;
+    Button[106] = 0;
+    Button[107] = 0;
+    Button[108] = 0;
+    Button[109] = 0;
+    Button[110] = 0;
+    Button[111] = 0;
+    Button[112] = 0;
+    Button[113] = 0;
+    Button[114] = 0;
+    Button[115] = 0;
+    Button[116] = 0;
+    Button[117] = 0;
+    Button[118] = 0;
+    Button[119] = 0;
+    Button[120] = 0;
+    Button[121] = 0;
+    Button[122] = 0;
+    Button[123] = 0;
+    Button[124] = 0;
+    Button[125] = 0;
+    Button[126] = 0;
+    Button[127] = 0;
+    Button[128] = 0;
+
+
     
 
 }
