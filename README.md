@@ -10,4 +10,4 @@ Designed for the [TG -U1](https://github.com/TeagueGillard/TG-U1)
 * 2 Joysticks / 4 Extra Analog Axis
 * Up to 4 LED Strips with FULL Simhub support!
 * 11 Extra pins (GPIO 11-21 each with GND Pin + 2 VCC Pins)
-* Control Adjustments when using [Sim Hardware](https://github.com/TeagueGillard/Sim-Hardware)) (Coming in the next update)
+* Control Adjustments when using [Sim Hardware](https://github.com/TeagueGillard/Sim-Hardware) (Coming in the next update)
